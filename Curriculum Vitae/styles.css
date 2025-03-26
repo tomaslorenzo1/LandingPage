@@ -1,3 +1,4 @@
+/* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     height: 100vh;
 }
 
+/* Contenedor Principal */
 .cv-container {
     width: 800px;
     display: flex;
@@ -16,6 +18,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Columna Izquierda */
 .left-column {
     width: 35%;
     background-color: #1E3A5F;
@@ -24,21 +27,16 @@ body {
     padding: 20px;
 }
 
-.right-column {
-    width: 65%;
-    padding: 20px;
-}
-
-.profile-picture {
-    width: 200px;
-    height: 200px;
+.header img {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     border: 4px solid white;
 }
 
 h1 {
     font-size: 22px;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 h2 {
@@ -48,13 +46,26 @@ h2 {
 }
 
 .section {
+    text-align: left;
     margin-bottom: 20px;
 }
 
 h3 {
     font-size: 18px;
-    border-bottom: 2px solid #1E3A5F;
     padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+/* Columna Derecha */
+.right-column {
+    width: 65%;
+    padding: 20px;
+    background-color: #F4F4F4;
+}
+
+.right-column h3 {
+    color: #1E3A5F;
+    border-bottom: 2px solid #1E3A5F;
 }
 
 p {
