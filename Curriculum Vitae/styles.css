@@ -1,74 +1,112 @@
-/* Estilos Generales */
-body {
-    font-family: Arial, sans-serif;
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; 
+    padding: 10px;
 }
 
-/* Contenedor Principal */
 .cv-container {
-    width: 800px;
-    display: flex;
+    width: 650px;
+    max-width: 100%; 
+    height: 850px;
+    max-height: 100%; 
     background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Columna Izquierda */
-.left-column {
-    width: 35%;
+.header {
     background-color: #1E3A5F;
     color: white;
-    text-align: center;
-    padding: 20px;
+    text-align: right;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
 }
 
-.header img {
-    width: 120px;
-    height: 120px;
+.content {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.left-column {
+    width: 250px;
+    background-color: #E6E6E6;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.left-column img {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 4px solid white;
-}
-
-h1 {
-    font-size: 22px;
-    margin: 10px 0;
-}
-
-h2 {
-    font-size: 16px;
-    font-weight: normal;
-    margin-bottom: 20px;
+    display: block;
+    margin: 10px auto;
 }
 
 .section {
-    text-align: left;
     margin-bottom: 20px;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 5px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
 }
 
-/* Columna Derecha */
 .right-column {
-    width: 65%;
-    padding: 20px;
-    background-color: #F4F4F4;
+    flex: 1;
+    padding: 40px;
+    margin-left: 280px;
+    background-color: white;
 }
 
-.right-column h3 {
-    color: #1E3A5F;
-    border-bottom: 2px solid #1E3A5F;
+.footer {
+    background-color: #1E3A5F;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
 }
 
-p {
-    font-size: 14px;
-    margin: 5px 0;
+@media screen and (max-width: 700px) {
+    .cv-container {
+        width: 95%;
+        height: auto; 
+    }
+
+    .left-column {
+        width: 100%; 
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .left-column img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .right-column {
+        margin-left: 0;
+        padding: 20px;
+    }
 }
