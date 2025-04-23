@@ -1,57 +1,72 @@
 body {
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #7f00ff, #e100ff);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.tarjeta-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.tarjeta {
+    background-color: #dcdcdc;
+  }
+  
+  .producto-container {
+    max-width: 390px;
+    margin: 30px auto;
     background-color: white;
-    width: 200px;
-    padding: 15px;
+    padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .header select {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .header .titulo {
+    font-size: 1.5rem;
+    color: #2a6edc;
+    margin: 0;
+  }
+  
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .tarjeta {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
     text-align: center;
-}
-
-.tarjeta img {
-    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tarjeta img {
+    max-width: 100%;
     border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.tarjeta h2 {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #7f00ff;
-}
-
-.tarjeta p {
-    font-size: 16px;
-    margin: 5px 0 15px;
-}
-
-.tarjeta button {
-    background-color: #7f00ff;
+  }
+  
+  .tarjeta h3 {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .tarjeta p {
+    color: #2a6edc;
+    font-weight: bold;
+    margin: 0.2rem 0 0.5rem;
+  }
+  
+  .tarjeta button {
+    background-color: #2a6edc;
     color: white;
     border: none;
-    padding: 8px 16px;
+    padding: 0.6rem 1.2rem;
     border-radius: 6px;
     cursor: pointer;
-}
-
-.tarjeta button:hover {
-    background-color: #5d00c2;
-}
+  }  

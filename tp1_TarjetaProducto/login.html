@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/fusion.css" />
-    <title>Fusion Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Store - Login</title>
+    <link rel="stylesheet" href="css/fusion.css">
 </head>
 <body>
     <main class="contenedor-login">
-        <h1 class="titulo-login">Fusion</h1>
-        <form class="login-form">
-            <input type="text" id="usuario" name="usuario" placeholder="Usuario" required />
-            <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required />
-            <button type="submit">Iniciar Sesión</button>
-            <span class="recordar">
-                ¿Olvidaste la contraseña?
-                <a href="#">Recordar contraseña</a>
-            </span>
+        <h1 class="titulo-login">fusion.</h1>
+        <form class="loginFormContainer" action="tarjetaProducto.html" method="GET">
+            <div id="formlogin">
+                <input type="text" id="usuario" name="usuario" placeholder="usuario" required>
+                <input type="password" id="contraseña" name="contraseña" placeholder="contraseña" required>
+            </div>
+            <div class="actionlogin">
+                <button type="submit">iniciar sesión</button>
+                <span>¿Olvidaste la contraseña? <a href="#">recordar contraseña</a></span>
+            </div>
         </form>
     </main>
 </body>
