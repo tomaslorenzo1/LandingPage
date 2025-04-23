@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <link rel="stylesheet" href="css/tarjeta.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link rel="stylesheet" href="css/tarjeta.css">
 </head>
 <body>
+  <div class="producto-container">
     <header>
-        <select>
-            <option>Hombre</option>
-            <option>Mujer</option>
-            <option>Niños</option>
-        </select>
-        <h1>Productos</h1>
+      <div class="menu-icon">&#9776;</div>
+      <h1 class="logo">fusion.</h1>
+      <div class="cart-icon">🛒</div>
     </header>
 
-    <main class="contenedor-productos">
-        <!-- Producto 1 -->
-        <article class="producto">
-            <section class="fotoProducto">
-                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Imagen de producto" class="imgProducto">
-            </section>
-            <section class="datoProducto">
-                <div class="detalleProducto">
-                    <h3>Remera algodón peinado</h3>
-                    <h6>REF #45625 - Beige</h6>
-                    <p>100% algodón</p>
-                </div>
-                <div class="valoresProducto">
-                    <h3>$4.990</h3>
-                </div>
-            </section>
-        </article>
+    <h2 class="section-title">New Product</h2>
 
-        <!-- Producto 2 -->
-        <article class="producto">
-            <section class="fotoProducto">
-                <img src="https://randomuser.me/api/portraits/women/71.jpg" alt="Imagen de producto" class="imgProducto">
-            </section>
-            <section class="datoProducto">
-                <div class="detalleProducto">
-                    <h3>Buzo canguro frisa</h3>
-                    <h6>REF #98652 - Negro</h6>
-                    <p>Con capucha</p>
-                </div>
-                <div class="valoresProducto">
-                    <h3>$8.990</h3>
-                </div>
-            </section>
-        </article>
-    </main>
+    <!-- Tarjetas de producto -->
+    <article class="producto">
+      <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="">
+      <div class="detalle">
+        <h3>Fine-knit polo shirt</h3>
+        <h6>REF: 13060273 - WINNIE</h6>
+        <div class="precio-puntuacion">
+          <span>$29.99</span>
+          <span class="puntuacion">9.5</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="producto">
+      <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="">
+      <div class="detalle">
+        <h3>Fine-knit print polo shirt</h3>
+        <h6>REF: 13075009 - PALM</h6>
+        <div class="precio-puntuacion">
+          <span>$19.99</span>
+          <span class="puntuacion">8.0</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="producto">
+      <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="">
+      <div class="detalle">
+        <h3>Essential cotton t-shirt</h3>
+        <h6>REF: 13085675 - MICHAEL</h6>
+        <div class="precio-puntuacion">
+          <span>$29.99</span>
+          <span class="puntuacion">9.0</span>
+        </div>
+      </div>
+    </article>
+  </div>
 </body>
 </html>

@@ -1,89 +1,80 @@
 body {
+    background: #e6e6e6;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-}
-
-header {
-    background-color: #e0e0e0;
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
+  }
+  
+  .producto-container {
+    width: 360px;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-header h1 {
-    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .menu-icon,
+  .cart-icon {
     font-size: 20px;
-    color: #4a90e2;
-}
-
-select {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.contenedor-productos {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-}
-
-.producto {
-    background-color: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: row;
-}
-
-.fotoProducto {
-    width: 40%;
-}
-
-.imgProducto {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.datoProducto {
-    padding: 10px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.detalleProducto h3 {
-    margin: 0;
-    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
     color: #333;
-}
-
-.detalleProducto h6 {
-    margin: 5px 0;
-    color: #777;
-    font-size: 12px;
-}
-
-.detalleProducto p {
-    margin: 5px 0;
-    font-size: 12px;
-    color: #666;
-}
-
-.valoresProducto h3 {
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .producto {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .producto img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .detalle h3 {
     margin: 0;
-    color: #4a90e2;
-    font-size: 16px;
-    text-align: right;
-}
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .detalle h6 {
+    margin: 4px 0;
+    font-size: 11px;
+    color: gray;
+  }
+  
+  .precio-puntuacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 6px;
+  }
+  
+  .puntuacion {
+    background: #3d5afe;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+  }  
