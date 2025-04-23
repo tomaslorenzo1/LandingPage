@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="css/tarjeta.css" />
-  <title>Productos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/tarjeta.css">
 </head>
 <body>
-  <div class="producto-container">
-    <header class="header">
-      <select>
-        <option>Categorías</option>
-        <option>Remeras</option>
-        <option>Pantalones</option>
-        <option>Accesorios</option>
-      </select>
-      <h1 class="titulo">fusion.</h1>
+    <header>
+        <select>
+            <option>Hombre</option>
+            <option>Mujer</option>
+            <option>Niños</option>
+        </select>
+        <h1>Productos</h1>
     </header>
 
-    <section class="tarjetas">
-      <div class="tarjeta">
-        <img src="img/remera1.png" alt="Producto 1">
-        <h3>Remera Oversize</h3>
-        <p>$3.500</p>
-        <button>Comprar</button>
-      </div>
-      <div class="tarjeta">
-        <img src="img/remera2.png" alt="Producto 2">
-        <h3>Remera Negra</h3>
-        <p>$3.000</p>
-        <button>Comprar</button>
-      </div>
-    </section>
-  </div>
+    <main class="contenedor-productos">
+        <!-- Producto 1 -->
+        <article class="producto">
+            <section class="fotoProducto">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Imagen de producto" class="imgProducto">
+            </section>
+            <section class="datoProducto">
+                <div class="detalleProducto">
+                    <h3>Remera algodón peinado</h3>
+                    <h6>REF #45625 - Beige</h6>
+                    <p>100% algodón</p>
+                </div>
+                <div class="valoresProducto">
+                    <h3>$4.990</h3>
+                </div>
+            </section>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="producto">
+            <section class="fotoProducto">
+                <img src="https://randomuser.me/api/portraits/women/71.jpg" alt="Imagen de producto" class="imgProducto">
+            </section>
+            <section class="datoProducto">
+                <div class="detalleProducto">
+                    <h3>Buzo canguro frisa</h3>
+                    <h6>REF #98652 - Negro</h6>
+                    <p>Con capucha</p>
+                </div>
+                <div class="valoresProducto">
+                    <h3>$8.990</h3>
+                </div>
+            </section>
+        </article>
+    </main>
 </body>
 </html>

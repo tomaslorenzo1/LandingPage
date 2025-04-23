@@ -2,59 +2,62 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #dcdcdc;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .contenedor-login {
-    background-color: white;
-    max-width: 390px;
-    margin: 30px auto;
-    padding: 2rem;
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .titulo-login {
     text-align: center;
-    font-size: 2rem;
-    color: #2a6edc;
-    margin-bottom: 1.5rem;
-}
-
-.loginFormContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    font-size: 32px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    text-transform: lowercase;
 }
 
 #formlogin input {
     width: 100%;
-    padding: 0.8rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
 }
 
 .actionlogin {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 10px;
 }
 
 .actionlogin button {
-    padding: 0.7rem 1.2rem;
-    background-color: #2a6edc;
+    background-color: #4a90e2;
     color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 6px;
-    cursor: pointer;
+    border-radius: 5px;
     width: 100%;
-    font-size: 1rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.actionlogin span {
+    font-size: 12px;
 }
 
 .actionlogin a {
-    color: #2a6edc;
+    color: #4a90e2;
     text-decoration: none;
-    font-size: 0.9rem;
 }
